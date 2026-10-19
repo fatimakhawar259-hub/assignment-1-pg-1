@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cozy Cup Cafe | Register</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f1e7;
+            color: #3e2723;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #e8d5bd;
+        }
+
+        #main-title {
+            font-size: 38px;
+            border-bottom: 2px solid brown;
+            padding-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #4b2e24;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f2c078;
+        }
+
+        main {
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .register-box {
+            background-color: #e8d5bd;
+            max-width: 450px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #8b5e3c;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 15px;
+            background-color: white;
+        }
+
+        input:focus, select:focus {
+            outline: 2px solid #80553c;
+        }
+
+        .register-button {
+            width: 100%;
+            margin-top: 22px;
+            padding: 13px;
+            background-color: #4b2e24;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .register-button:hover {
+            background-color: #80553c;
+        }
+
+        .note {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #e8d5bd;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            #main-title {
+                font-size: 30px;
+            }
+
+            .register-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="main-title">Cozy Cup Cafe</h1>
+        <p class="tagline">A little coffee, a lot of happiness.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="media.html">Media</a>
+        <a href="register.html">Register</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Create Your Account</h2>
+
+        <p>
+            Join Cozy Cup Cafe to stay updated with our
+            latest drinks, desserts and special offers.
+        </p>
+
+        <form class="register-box" action="#" method="post">
+
+            <label for="fullname">Full Name</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required>
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required>
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a password"
+                minlength="8"
+                required>
+
+            <label for="coffee">Favorite Coffee</label>
+            <select id="coffee" name="coffee" required>
+                <option value="">Choose your favorite</option>
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="espresso">Espresso</option>
+                <option value="mocha">Mocha</option>
+                <option value="iced-coffee">Iced Coffee</option>
+                <option value="tea">Tea</option>
+            </select>
+
+            <button type="submit" class="register-button">
+                Register Now
+            </button>
+
+            <p class="note">
+                We are happy to have you at Cozy Cup Cafe!
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cozy Cup Cafe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
